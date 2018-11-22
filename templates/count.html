@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word</title>
+</head>
+<body>
+<h1>Counted</h1>
+
+<a href="{% url 'home' %}"> <strong>Back to home</strong></a>
+
+<br>
+sentence = {{ fulltext }}
+<br>
+
+<strong>Total_word = </strong> {{ total_word }}
+
+<br>
+{% for word,value in words_dict %}
+<strong>{{ word }}</strong>  = {{ value }}
+<br>
+
+{% endfor %}
+</body>
+</html>

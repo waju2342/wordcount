@@ -1,0 +1,17 @@
+<h1>WorldCount</h1>
+
+
+
+<p> Well come to Home page</p>
+<br>
+
+<!--to get and show value from view and show in page-->
+
+
+<form action="{% url 'count' %}">
+
+    <textarea name="fulltestarea" cols=40 rows=10></textarea>
+    <input type="submit" value="count"/>
+    <input type="submit" value="about">
+</form>
+<a href="{% url 'about' %}"> <strong>About</strong></a>
